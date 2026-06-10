@@ -1,4 +1,4 @@
-# AURACatalog — Product Catalog
+# Second Store — Product Catalog
 
 A modern product catalog application built with React + Vite + Tailwind CSS v4, fetching data from [Fake Store API](https://fakestoreapi.com) and designed with an elegant Airbnb-inspired Clean White Canvas.
 
@@ -8,7 +8,7 @@ A modern product catalog application built with React + Vite + Tailwind CSS v4, 
 
 Clone atau ekstrak proyek, lalu jalankan perintah berikut:
 
-    cd auracatalog
+    cd Second-Store
     npm install
     npm run dev
 
