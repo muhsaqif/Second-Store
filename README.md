@@ -1,7 +1,10 @@
 # Second Store — Product Catalog
 
-A modern product catalog application built with React + Vite + Tailwind CSS v4, fetching data from [Fake Store API](https://fakestoreapi.com) and designed with an elegant Airbnb-inspired Clean White Canvas.
+Aplikasi katalog produk modern yang dibuat pakai React, Vite, dan Tailwind CSS v4. Data produknya ditarik langsung dari Fake Store API, sedangkan untuk tampilan visualnya mengusung konsep Clean White Canvas yang terinspirasi dari desain minimalis ala Airbnb. Proyek ini dibuat dan dikembangkan untuk menyelesaikan tugas mata kuliah Pemrograman Web (Modul 6) dengan fokus implementasi pada asynchronous data fetching, manajemen state lokal, serta arsitektur antarmuka yang responsif dan bersih.
 
+---
+
+## Getting Started
 ---
 
 ## Getting Started
