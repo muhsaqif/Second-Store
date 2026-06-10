@@ -2,6 +2,8 @@
 
 A modern product catalog application built with React + Vite + Tailwind CSS v4, fetching data from [Fake Store API](https://fakestoreapi.com) and designed with an elegant Airbnb-inspired Clean White Canvas.
 
+---
+
 ## Getting Started
 
 Clone atau ekstrak proyek, lalu jalankan perintah berikut:
@@ -19,68 +21,17 @@ App akan berjalan di **http://localhost:5173**
 
 ---
 
-## Features
-
-### Core Features
+## Features Implemented
 
 | Feature | Description |
 |---|---|
-| **GET Request with Axios** | Fetches products and categories from `/products` using a dedicated Axios instance in `src/api.js` |
-| **Loading Indicator** | Clean animated loading spinner (`animate-spin text-[#ff385c]`) centered on the page while data is loading |
-| **Error Handling** | `try/catch` block handling network/server errors with an alert component and a functional "Try Again" button |
-| **Server-Side Filter** | Categories fetched dynamically from API; filtering triggers direct backend queries for live server-side switching |
-| **Real-time Search** | Interactive pill-shaped search bar that filters product titles instantly utilizing React `useMemo` optimization |
-| **Product Detail Modal** | Fixed overlay modal (`backdrop-blur-sm`) displaying full product images, deep descriptions, rating scores, and pricing |
-| **Responsive Grid** | Strict mobile-first breakpoints: 1 column on mobile, 2-3 columns on tablet, and 4 columns on large desktop layouts |
-
-### Bonus Features
-
-| Feature | Description |
-|---|---|
-| **Real Pagination** | Dividers that split the catalog into precise page segments, fully synchronized with search inputs and categories |
-| **Add to Cart View** | Instant internal view navigation switching via state (`currentView`) supporting robust product quantity adjustments |
-| **Quantity Stepper** | Interactive `+` and `-` counter buttons in the cart view allowing dynamic real-time shopping quantity updates |
-| **Data Persistence** | Seamless `localStorage` binding keeping cart payloads and wishlist heart tallies intact across page refreshes |
-
-### Additional UI Features
-
-| Feature | Description |
-|---|---|
-| **Clean White Canvas** | Premium minimalist palette using pure white (`#ffffff`), charcoal text (`#222222`), and ultra-thin borders (`#dddddd`) |
-| **Rausch Accent Voltage**| Single-accent token implementation using exclusive Airbnb Rausch (`#ff385c`) for all active states and CTA inputs |
-| **Scrollable Category Strip**| Horizontal slide-and-scroll swipe strip for category selection pills on mobile viewports to prevent layout wrapping |
-| **Responsive Cart Stack**| Structural transformation that collapses rigid table elements into sleek stacked cards on mobile and small screens |
-
----
-
-## Folder Structure
-
-**src/**
-- lib/
-  - api.js
-- App.jsx
-- main.jsx
-- index.css
-
-*Note: In compliance with strict codebase rules, all sub-layout structures, modals, states, and client-side page toggles are neatly packaged inside the single unified file `src/App.jsx`.*
-
----
-
-## Tech Stack
-
-| Technology | Purpose |
-|---|---|
-| React 18 | Declarative UI library with centralized state hooks |
-| Vite 5 / 6 | High-speed development server and production bundler |
-| Tailwind CSS 4 | Next-gen utility-first framework using modern `@import "tailwindcss"` engine |
-| Axios | Promise-based HTTP client handling asynchronous data streams cleanly |
-
----
-
-## API Endpoints Used
-
-| Endpoint | Method | Description |
-|---|---|---|
-| `/products` | GET | Fetch all available marketplace products |
-| `/products/categories` | GET | Fetch unique list of product categories |
-| `/products/category/{category}` | GET | Fetch server-filtered items by selected category tag |
+| **Airbnb Canvas Styling** | Premium minimalist palette using pure white (`#ffffff`), charcoal text (`#222222`), thin borders (`#dddddd`), and exclusive Rausch (`#ff385c`) accents. |
+| **GET Request with Axios** | Fetches products and unique categories dynamically from server-side using a dedicated Axios instance in `src/api.js`. |
+| **Loading & Error Handling** | Animated loading spinner (`animate-spin`) during data fetch, and a red alert box with a functional "Try Again" retry button if a network failure occurs. |
+| **Real-time Search Bar** | Capsule-shaped search bar in the navbar that filters product titles instantly utilizing React `useMemo` optimization. |
+| **Product Detail Modal** | Anti-break fixed overlay dialog (`backdrop-blur-sm`) that opens a floating card showing full images, rating stars, and deep descriptions without breaking the catalog layout. |
+| **Real Pagination** | Clean client-side pagination system to navigate items smoothly, fully synchronized with active search terms and categories. |
+| **In-App Cart View** | Instant single-page view shifting to the Shopping Cart page via internal state, bypassing the need for heavy router libraries. |
+| **Quantity Stepper** | Interactive `+` and `-` counter adjustments inside the cart view allowing live quantity and subtotal calculations. |
+| **Data Persistence** | Native `localStorage` binding keeping active shopping cart items and wishlist heart selections intact even after a full browser refresh. |
+| **Mobile-First Layout** | Adaptive layout changing navbar links into vertical flows, making categories horizontally scrollable, and switching rigid cart layouts into stacked vertical components on mobile devices. |
